@@ -12,4 +12,4 @@ Esse é o time de alunos, da graduação em Sistemas de Informações, responsá
 | :---: | :---: | :---:
 | [<img src="https://avatars.githubusercontent.com/u/116587792?v=4" width=115><br><sub>Higor Cunha - hbc@cin.ufpe.br</sub>](https://github.com/higorcunha1) |  [<img src="https://avatars.githubusercontent.com/u/86128256?v=4" width=115><br><sub>Giovanna Machado - gpmb@cin.ufpe.br</sub>](https://github.com/giovannamachado) |
 
-Líder do projeto: Giovanna Machado - gpmb@cin.ufpe.br
+Líder da equipe: Giovanna Machado - gpmb@cin.ufpe.br
