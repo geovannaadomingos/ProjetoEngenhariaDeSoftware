@@ -24,7 +24,7 @@ Essas são as principais tecnologias utilizadas no desenvolvimento do projeto:
 | Ferramenta | Descrição | Justificativa para o uso |
 | --- | --- | --- |
 | `JavaScript` | Linguagem de programação | É uma linguagem legível, de fácil manutenção e que possibilita a reutilização de códigos. Além disso, roda em diferentes sistemas operacionais e possui diversas bibliotecas. |
-| `React.js` | Biblioteca para criação de interfaces de JS reativas | em aberto |
+| `React.js` | Biblioteca para criação de interfaces web reativas e baseadas em componentização | em aberto |
 | `Vite` | em aberto | em aberto |
 | `Node.js` | em aberto | em aberto |
 | `Express` | em aberto | em aberto |
