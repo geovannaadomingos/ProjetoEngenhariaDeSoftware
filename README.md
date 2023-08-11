@@ -11,6 +11,12 @@ O projeto consiste em plataforma web feita para que alunos possam compartilhar e
 
 ------
 
+## Metodologia de desenvolvimento utilizada
+
+A metodologia para o desenvolvimento do projeto é a ágil, com uma combinação entre os ritos do Scrum e o quadro do Kanban.
+
+------
+
 ## Tecnologias utilizadas
 
 Essas são as principais tecnologias utilizadas no desenvolvimento do projeto:
