@@ -1,4 +1,4 @@
-# ColaboraCIn - Projeto de Engenharia de Software
+# :books: ColaboraCIn - Projeto de Engenharia de Software
 Esse é um repositório feito para aplicar os conceitos e conteúdos vistos ao longo da disciplina de Engenharia de Software do Centro de Informática([CIn](https://portal.cin.ufpe.br/)) da Universidade Federal de Pernambuco([UFPE](https://www.ufpe.br)). 
 
 Nesse repositório, é possível encontrar os códigos desenvolvidos ao decorrer do processo e também informações relevantes sobre o projeto, como a divisão de tarefas, tecnologias utilizadas, etc.   
