@@ -5,7 +5,7 @@ Descrição:
 Como estudante do CIn, gostaria de compartilhar todo tipo de material que me auxiliou no decorrer dos semestres passados com qualquer outro aluno que possa precisar desse conteúdo.
 
 Critérios de aceitação:
-Devo poder fazer upload dos materiais acadêmicos, e eles devem ser armazenados com segurança.
+*Devo poder fazer upload dos materiais acadêmicos, e eles devem ser armazenados com segurança.
 Devo poder realizar upload de diversos tipos de materiais, como PDFs, Anotações digitalizadas, etc…
 Qualquer aluno da UFPE poderá ter acesso a essa plataforma.
 Devo ser avisado, antes da publicação, caso haja algum erro com os materiais adicionados ao resumo
