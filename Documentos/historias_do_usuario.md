@@ -3,7 +3,9 @@
 ### Upload de materiais de estudo
 
 **Descrição:** 
+```
 > Como estudante do CIn, gostaria de compartilhar todo tipo de material que me auxiliou no decorrer dos semestres passados com qualquer outro aluno que possa precisar desse conteúdo.
+```
 
 **Critérios de aceitação:**
 * Devo poder fazer upload dos materiais acadêmicos, e eles devem ser armazenados com segurança.
@@ -19,7 +21,9 @@
 ### Download de materiais de estudo.
 	
 **Descrição:**
->Como estudante do CIn, gostaria que existisse um meio de conseguir acesso de maneira fácil a resumos e anotações de outros alunos que já concluíram alguma disciplina que eu irei cursar.
+```
+> Como estudante do CIn, gostaria que existisse um meio de conseguir acesso de maneira fácil a resumos e anotações de outros alunos que já concluíram alguma disciplina que eu irei cursar.
+```
 
 **Critérios de aceitação:**
 * Devo poder encontrar materiais que são relevantes para as disciplinas que eu estou cursando.
