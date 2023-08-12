@@ -7,7 +7,7 @@ Nesse repositório, é possível encontrar os códigos desenvolvidos ao decorrer
 
 ## Escopo
 
-O projeto consiste em plataforma web feita para que alunos possam compartilhar e visualizar materiais de estudo de diferentes disciplinas, períodos e semestres do CIn. Portanto, tem-se um SaaS (software como serviço).
+O projeto consiste em plataforma web feita para que alunos possam compartilhar e visualizar materiais de estudo de diferentes disciplinas, períodos e semestres do CIn. Portanto, tem-se um SaaS (software como serviço). Para entender o fluxo do site, acesse o [link](https://lucid.app/lucidchart/c2d029af-0822-4014-8e18-7a07301a5597/edit?viewport_loc=288%2C213%2C1480%2C673%2C0_0&invitationId=inv_0a321887-81da-4a9e-bd10-c6d407321919). 
 
 ------
 
