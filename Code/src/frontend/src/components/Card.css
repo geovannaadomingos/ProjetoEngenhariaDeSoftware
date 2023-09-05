@@ -201,9 +201,25 @@
 }
 
 .frame .eye {
-  height: 17px;
-  left: 12px;
+  height: 100%;
+  left: 15px;
   position: absolute;
-  top: 0;
-  width: 20px;
+  top: -1px;
+  width: auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.frame {
+  width: 30%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
 }
