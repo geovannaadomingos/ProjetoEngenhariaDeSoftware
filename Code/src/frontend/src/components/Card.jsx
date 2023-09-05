@@ -20,7 +20,7 @@ function Card(props) {
         <div className="group">
           <div className="overlap">
             <div className="rectangle" />
-            <div className="text-wrapper">{title}</div>
+            <div className="text-title">{title}</div>
             <div className="overlap-group-wrapper">
               <div className="overlap-group">
                 <div className="div">{courseCode}</div>
@@ -28,19 +28,19 @@ function Card(props) {
             </div>
             <div className="overlap-wrapper">
               <div className="div-wrapper">
-                <div className="text-wrapper-2">{credits}</div>
+                <div className="text-year">{credits}</div>
               </div>
             </div>
             <div className="group-2">
               <div className="overlap-2">
-                <div className="text-wrapper-3">{semester}</div>
+                <div className="text-semester">{semester}</div>
               </div>
             </div>
-            <div className="text-wrapper-4">Professor(a): {professor}</div>
-            <div className="text-wrapper-5">Autor(a): {author}</div>
-            <div className="text-wrapper-6">Assunto: {subject}</div>
+            <div className="text-professor">Professor(a): {professor}</div>
+            <div className="text-author">Autor(a): {author}</div>
+            <div className="text-subject">Assunto: {subject}</div>
             <div className="group-3">
-              <div className="text-wrapper-7">{views}</div>
+              <div className="text-views">{views}</div>
               <img className="eye" alt="Eye" src={Eye} />
             </div>
           </div>
