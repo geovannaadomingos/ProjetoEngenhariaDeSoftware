@@ -15,36 +15,24 @@ function Card(props) {
   } = props;
 
   return (
-    <div className="frame">
-      <div className="group-wrapper">
-        <div className="group">
-          <div className="overlap">
-            <div className="rectangle" />
-            <div className="text-title">{title}</div>
-            <div className="overlap-group-wrapper">
-              <div className="overlap-group">
-                <div className="div">{courseCode}</div>
-              </div>
-            </div>
-            <div className="overlap-wrapper">
-              <div className="div-wrapper">
-                <div className="text-year">{credits}</div>
-              </div>
-            </div>
-            <div className="group-2">
-              <div className="overlap-2">
-                <div className="text-semester">{semester}</div>
-              </div>
-            </div>
-            <div className="text-professor">Professor(a): {professor}</div>
-            <div className="text-author">Autor(a): {author}</div>
-            <div className="text-subject">Assunto: {subject}</div>
-            <div className="group-3">
-              <div className="text-views">{views}</div>
-              <img className="eye" alt="Eye" src={Eye} />
-            </div>
-          </div>
+    <div className="card">
+      <div className="header">
+        <div className="rectangle" />
+        <div className="title">{title}</div>
+        <div className="views">
+          <div className="text-views">{views}</div>
+          <img className="eye" alt="Eye" src={Eye} />
         </div>
+      </div>
+      <div className="details">
+        <div className="professor">Professor(a): {professor}</div>
+        <div className="author">Autor(a): {author}</div>
+        <div className="subject">Assunto: {subject}</div>
+      </div>
+      <div className="footer">
+        <div className="semester">{semester}</div>
+        <div className="credits">{credits}</div>
+        <div className="course-code">{courseCode}</div>
       </div>
     </div>
   );

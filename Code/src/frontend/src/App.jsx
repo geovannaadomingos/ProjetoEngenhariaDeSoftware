@@ -83,7 +83,7 @@ function App() {
           professor="João Silva"
           author="outroautor"
           subject="outra matéria"
-          views={1200}
+          views={12}
         />
         <Card
           title="Mais um Card"
