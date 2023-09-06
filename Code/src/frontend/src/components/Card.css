@@ -84,7 +84,7 @@
 
 .footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 10px;
 }
 
@@ -93,8 +93,6 @@
 .course-code {
   background-color: #828282;
   border-radius: 5px;
-  height: auto;
-  width: auto;
   color: #000000;
   font-family: "Inter-Regular", Helvetica;
   font-size: 16px;

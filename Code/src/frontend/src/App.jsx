@@ -69,7 +69,7 @@ function App() {
           semester="3° Período"
           professor="Kelvin Lopes"
           author="meom"
-          subject="protocolo http"
+          subject="protocolo http misturando com"
           views={9}
         />
       </div>
