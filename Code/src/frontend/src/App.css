@@ -48,3 +48,14 @@ nav {
   width: 190px;
   font-size: 17px;
 }
+
+.search-icon {
+  filter: brightness(0) invert(1);
+}
+
+.more-icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 5px;
+  filter: brightness(0) invert(1);
+}
