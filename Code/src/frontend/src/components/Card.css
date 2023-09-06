@@ -1,36 +1,29 @@
-.frame {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
-.frame .group-wrapper {
-  background-color: #ffffff;
-  height: 182px;
-  overflow: hidden;
-  width: 310px;
-}
-
-.frame .group {
-  height: 182px;
-  width: 318px;
-}
-
-.frame .overlap {
+.card {
   background-color: #D9D9D9;
-  border-radius: 10px 10px 10px 10px;
-  background-image: url(./rectangle-1.svg);
-  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 318px;
   height: 182px;
+  border-radius: 12px;
+  overflow: hidden;
   position: relative;
-  width: 310px;
+  border: 2px solid #828282;
 }
 
-.frame .rectangle {
-  background-color: #818181;
-  border-radius: 10px 0px 0px 10px;
+.card .title {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  left: 82px;
+  top: 22px;
+  letter-spacing: 0;
+  position: absolute;
+  margin: 0 10px;
+}
+
+.card .rectangle {
+  background-color: #828282;
   height: 182px;
   left: 0;
   position: absolute;
@@ -38,149 +31,14 @@
   width: 20px;
 }
 
-.frame .text-title {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  left: 82px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 22px;
-  white-space: nowrap;
-}
-
-.frame .overlap-group-wrapper {
+.header {
+  border-radius: 10px 10px 0 0;
   height: 30px;
-  left: 208px;
-  position: absolute;
-  top: 138px;
-  width: 66px;
+  display: flex;
+  align-items: center;
 }
 
-.frame .overlap-group {
-  background-color: #818181;
-  border-radius: 5px;
-  height: 30px;
-  position: relative;
-  width: 64px;
-}
-
-.frame .div {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  left: 10px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 7px;
-  white-space: nowrap;
-  width: 44px;
-}
-
-.frame .overlap-wrapper {
-  height: 30px;
-  left: 150px;
-  position: absolute;
-  top: 138px;
-  width: 46px;
-}
-
-.frame .div-wrapper {
-  background-color: #818181;
-  border-radius: 5px;
-  height: 30px;
-  position: relative;
-  width: 44px;
-}
-
-.frame .text-year {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  left: 5px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 7px;
-  white-space: nowrap;
-  width: 34px;
-}
-
-.frame .group-2 {
-  height: 30px;
-  left: 39px;
-  position: absolute;
-  top: 138px;
-  width: 99px;
-}
-
-.frame .overlap-2 {
-  background-color: #818181;
-  border-radius: 5px;
-  height: 30px;
-  position: relative;
-  width: 97px;
-}
-
-.frame .text-semester {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  left: 8px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 7px;
-  white-space: nowrap;
-  width: 81px;
-}
-
-.frame .text-professor {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  left: 39px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 58px;
-  white-space: nowrap;
-}
-
-.frame .text-author {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  left: 39px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 82px;
-  white-space: nowrap;
-}
-
-.frame .text-subject {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  left: 39px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 107px;
-  white-space: nowrap;
-}
-
-.frame .group-3 {
+.card .views {
   height: 17px;
   left: 268px;
   position: absolute;
@@ -188,7 +46,7 @@
   width: 34px;
 }
 
-.frame .text-views {
+.card .text-views {
   color: #000000;
   font-family: "Inter-Regular", Helvetica;
   font-size: 12px;
@@ -197,15 +55,49 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 1px;
+  top: 0px;
 }
 
-.frame .eye {
-  height: 100%;
+.card .eye {
   left: 15px;
   position: absolute;
   top: -1px;
-  width: auto;
+}
+
+.details {
+  position: relative;
+  width: 310px;
+  height: 40px;
+  left: 39px;
+}
+
+.professor,
+.author,
+.subject {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.semester,
+.credits,
+.course-code {
+  background-color: #828282;
+  border-radius: 5px;
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  margin: 0 5px;
+  padding: 5px;
 }
 
 .card-container {
@@ -214,12 +106,4 @@
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 30px;
-}
-
-.frame {
-  width: 30%;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 10px;
 }
