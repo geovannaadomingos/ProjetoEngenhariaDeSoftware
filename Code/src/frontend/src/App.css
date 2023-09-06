@@ -1,6 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+header{
+  margin-bottom: 80px;
+}
+nav {
+  background-color: #242424;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-div1 {
+  display: flex;
+  align-items: center;
+}
+
+.nav-img {
+  height: 60px;
+  margin-left: 20px;
+}
+
+.nav-h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.nav-img2 {
+  height: 30px;
+}
+
+.nav-div-a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-div2,
+.nav-div2-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-div2 {
+  width: 300px;
+}
+
+.nav-div2-div {
+  width: 190px;
+  font-size: 17px;
+}
+
+.search-icon {
+  filter: brightness(0) invert(1);
+}
+
+.more-icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 5px;
+  filter: brightness(0) invert(1);
 }
