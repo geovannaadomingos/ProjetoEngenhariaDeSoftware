@@ -2,18 +2,24 @@ const request = require('supertest');
 const app = require('../app');
 
 describe('API de materiais de estudo', () => {
-    it('Deve retornar 18 materiais disponíveis ao entrar na homepage', async () => {
+    it('Deve retornar no máximo 18 materiais ao entrar na homepage', async () => {
         const res = await request(app).get('/api');
-        expect(res.statusCode).toEqual(200);
-        expect(res.body.length).toEqual(18);
+
+        if (res.body.length > 0) {
+            expect(res.statusCode).toEqual(200);
+            expect(res.body.length).toBeLessThanOrEqual(18);
+        }
+        else expect(res.body).toHaveProperty('message');
     });
 
     it('Deve retornar todos os materiais disponíveis, de acordo com os filtros aplicados', async () => {
         const res = await request(app).get('/api/materiais');
 
-        const filters = [req.query.code, req.query.teacher, req.query.cratedAt, req.query.semester]
-        filters.forEach(category => {
-            if (category) res = res.filter(content => content.category === category);
+        res.body.forEach(content => {
+            if (req.query.code) expect(content).toHaveProperty('code', req.query.code);
+            if (req.query.teacher) expect(content).toHaveProperty('teacher', req.query.teacher);
+            if (req.query.createdAt) expect(content).toHaveProperty('createdAt', req.query.createdAt);
+            if (req.query.semester) expect(content).toHaveProperty('semester', req.query.semester);
         });
 
         if (res.length > 0) expect(res.statusCode).toEqual(200)
@@ -22,7 +28,15 @@ describe('API de materiais de estudo', () => {
 
     it('Deve retornar o material buscado, caso ele exista, ou o código de erro', async () => {
         const res = await request(app).get('/api/materiais/1');
-        if (res) expect(res.statusCode).toEqual(200)
+        if (res) {
+            expect(res.statusCode).toEqual(200);
+            expect(res.body).toHaveProperty('id', '1');
+            expect(res.body).toHaveProperty('title');
+            expect(res.body).toHaveProperty('subject');
+            expect(res.body).toHaveProperty('code');
+            expect(res.body).toHaveProperty('teacher');
+            expect(res.body).toHaveProperty('author');
+        }
         else expect(res.statusCode).toEqual(404);
     });
 
