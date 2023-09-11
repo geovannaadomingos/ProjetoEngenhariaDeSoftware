@@ -17,6 +17,10 @@ const MaterialSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    semester: {
+        type: Number,
+        required: true
+    },
     author: {
         type: String,
         required: true

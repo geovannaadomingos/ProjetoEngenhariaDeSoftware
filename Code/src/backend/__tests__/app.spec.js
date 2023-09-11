@@ -20,6 +20,7 @@ describe('API de materiais de estudo', () => {
             if (req.query.teacher) expect(content).toHaveProperty('teacher', req.query.teacher);
             if (req.query.createdAt) expect(content).toHaveProperty('createdAt', req.query.createdAt);
             if (req.query.semester) expect(content).toHaveProperty('semester', req.query.semester);
+            if (req.query.semester) expect(content.semester).toBeLessThanOrEqual(req.query.semester);
         });
 
         if (res.length > 0) expect(res.statusCode).toEqual(200)
