@@ -9,7 +9,10 @@ describe('API de materiais de estudo', () => {
             expect(res.statusCode).toEqual(200);
             expect(res.body.length).toBeLessThanOrEqual(18);
         }
-        else expect(res.body).toHaveProperty('message');
+        else {
+            expect(res.statusCode).toEqual(404);
+            expect(res.body).toHaveProperty('message');
+        };
     });
 
     it('Deve retornar todos os materiais disponíveis, de acordo com os filtros aplicados', async () => {
@@ -24,7 +27,10 @@ describe('API de materiais de estudo', () => {
         });
 
         if (res.length > 0) expect(res.statusCode).toEqual(200)
-        else expect(res.statusCode).toEqual(404);
+        else {
+            expect(res.statusCode).toEqual(404);
+            expect(res.body).toHaveProperty('message');
+        };
     });
 
     it('Deve retornar o material buscado, caso ele exista, ou o código de erro', async () => {
@@ -36,9 +42,13 @@ describe('API de materiais de estudo', () => {
             expect(res.body).toHaveProperty('subject');
             expect(res.body).toHaveProperty('code');
             expect(res.body).toHaveProperty('teacher');
+            expect(res.body).toHaveProperty('semester');
             expect(res.body).toHaveProperty('author');
         }
-        else expect(res.statusCode).toEqual(404);
+        else {
+            expect(res.statusCode).toEqual(404);
+            expect(res.body).toHaveProperty('message');
+        };
     });
 
     it('Deve retornar as informações do conteúdo, o qual foi realizado o upload', async () => {
@@ -49,6 +59,7 @@ describe('API de materiais de estudo', () => {
                 subject: 'Protocolo HTTP',
                 code: 'IF975',
                 teacher: 'Kelvin Lopes',
+                semester: 22.1,
                 author: 'meom'
             })
             .attach('file', '/api/materiais/upload/arquivo.png');
@@ -67,6 +78,9 @@ describe('API de materiais de estudo', () => {
             expect(res.statusCode).toEqual(200);
             expect(res.body).toHaveProperty('message');
         }
-        else expect(res.statusCode).toEqual(404);
+        else {
+            expect(res.statusCode).toEqual(505);
+            expect(res.body).toHaveProperty('message');
+        };
     });
 });
