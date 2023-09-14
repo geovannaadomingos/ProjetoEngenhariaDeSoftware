@@ -38,31 +38,6 @@
   align-items: center;
 }
 
-.card .views {
-  height: 17px;
-  left: 268px;
-  position: absolute;
-  top: 14px;
-  width: 34px;
-}
-
-.card .text-views {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 12px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0px;
-}
-
-.card .eye {
-  left: 15px;
-  position: absolute;
-  top: -1px;
-}
 
 .details {
   position: relative;
@@ -98,12 +73,4 @@
   font-size: 16px;
   margin: 0 5px;
   padding: 5px;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 30px;
 }

@@ -1,6 +1,4 @@
-import React from "react";
 import "./Card.css";
-import Eye from "../assets/eye.png";
 
 function Card(props) {
   const {
@@ -10,8 +8,7 @@ function Card(props) {
     semester,
     professor,
     author,
-    subject,
-    views,
+    subject
   } = props;
 
   return (
@@ -19,10 +16,6 @@ function Card(props) {
       <div className="header">
         <div className="rectangle" />
         <div className="title">{title}</div>
-        <div className="views">
-          <div className="text-views">{views}</div>
-          <img className="eye" alt="Eye" src={Eye} />
-        </div>
       </div>
       <div className="details">
         <div className="professor">Professor(a): {professor}</div>

@@ -40,8 +40,7 @@ function App() {
           </div>
         </nav>
       </header>
-
-      <div className="card-container">
+      <main>
         <Card
           title="Protocolo HTTP"
           courseCode="IF975"
@@ -50,7 +49,6 @@ function App() {
           professor="Kelvin Lopes"
           author="meom"
           subject="protocolo http"
-          views={7}
         />
         <Card
           title="Protocolo HTTP"
@@ -60,7 +58,6 @@ function App() {
           professor="Kelvin Lopes"
           author="meom"
           subject="protocolo http"
-          views={8}
         />
         <Card
           title="Protocolo HTTP"
@@ -70,35 +67,12 @@ function App() {
           professor="Kelvin Lopes"
           author="meom"
           subject="protocolo http misturando com"
-          views={9}
         />
-      </div>
-      <div className="card-container">
-        {/* Segundo conjunto de Cards */}
-        <Card
-          title="Outro Título"
-          courseCode="IF976"
-          credits="20.5"
-          semester="4° Período"
-          professor="João Silva"
-          author="outroautor"
-          subject="outra matéria"
-          views={12}
-        />
-        <Card
-          title="Mais um Card"
-        // Adicione as propriedades do segundo card do segundo conjunto aqui
-        />
-        <Card
-          title="E mais um"
-        // Adicione as propriedades do terceiro card do segundo conjunto aqui
-        />
-      </div>
+      </main>
 
       <footer>
         <h4>
-          2023 - <a class="a-footer" href="https://github.com/geovannaadomingos/ProjetoEngenhariaDeSoftware"
-            target="_blank">Repositório com mais informações</a>
+          2023 - <a className="a-footer" href="https://github.com/geovannaadomingos/ProjetoEngenhariaDeSoftware" target="_blank" rel="noreferrer">Repositório com mais informações</a>
         </h4>
       </footer>
     </>

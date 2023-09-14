@@ -1,16 +1,11 @@
 :root {
   font-family: sf pro text, -apple-system, BlinkMacSystemFont, segoe ui, roboto, helvetica neue, arial, sans-serif;
   font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  padding: none;
   min-width: 320px;
   min-height: 100vh;
 }
