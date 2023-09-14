@@ -29,10 +29,19 @@ nav {
   height: 30px;
 }
 
+.nav-div2-div .nav-img2 {
+  filter: brightness(0) invert(1);
+}
+
 .nav-div-a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.nav-div-a:hover {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .nav-div2,
@@ -55,16 +64,9 @@ nav {
   filter: brightness(0) invert(1);
 }
 
-.more-icon {
-  width: 23px;
-  height: 23px;
-  margin-right: 5px;
-  filter: brightness(0) invert(1);
-}
-
 /* MAIN */
 
-main{
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

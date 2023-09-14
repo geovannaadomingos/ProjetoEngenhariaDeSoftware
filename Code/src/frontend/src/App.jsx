@@ -35,7 +35,7 @@ function App() {
               <img
                 src={mais}
                 alt="Icone de mais"
-                className="nav-img2 more-icon"
+                className="nav-img2"
               />
             </div>
           </div>
