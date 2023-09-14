@@ -66,6 +66,7 @@ nav {
 
 main{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-left: 130px;
   margin-right: 130px;

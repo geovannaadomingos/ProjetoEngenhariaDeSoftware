@@ -3,6 +3,7 @@ import './App.css'
 import logo from './assets/colabora.png'
 import lupa from './assets/lupa.png'
 import mais from './assets/mais.svg'
+import main_materials from '../mocks/main_materials.json'
 import Card from './components/Card'
 
 function App() {
@@ -40,34 +41,21 @@ function App() {
           </div>
         </nav>
       </header>
+
       <main>
-        <Card
-          title="Protocolo HTTP"
-          courseCode="IF975"
-          credits="22.2"
-          semester="3° Período"
-          professor="Kelvin Lopes"
-          author="meom"
-          subject="protocolo http"
-        />
-        <Card
-          title="Protocolo HTTP"
-          courseCode="IF975"
-          credits="22.2"
-          semester="3° Período"
-          professor="Kelvin Lopes"
-          author="meom"
-          subject="protocolo http"
-        />
-        <Card
-          title="Protocolo HTTP"
-          courseCode="IF975"
-          credits="22.2"
-          semester="3° Período"
-          professor="Kelvin Lopes"
-          author="meom"
-          subject="protocolo http misturando com"
-        />
+        {main_materials.map((material) => (
+          <Card
+            key={material.id}
+            titulo={material.titulo}
+            codigoDisciplina={material.codigoDisciplina}
+            assunto={material.assunto}
+            semestre={material.semestre}
+            professor={material.professor}
+            autor={material.autor}
+            periodo={material.periodo}
+            curso={material.curso}
+          />
+        ))}
       </main>
 
       <footer>

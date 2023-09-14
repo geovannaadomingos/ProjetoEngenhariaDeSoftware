@@ -3,20 +3,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 318px;
   height: 182px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
   border: 2px solid #828282;
+  margin: 40px;
 }
 
 .card .title {
   color: #000000;
   font-family: "Inter-Regular", Helvetica;
   font-size: 20px;
-  left: 82px;
-  top: 22px;
+  left: 26px;
+  top: 26px;
   letter-spacing: 0;
   position: absolute;
   margin: 0 10px;
@@ -33,7 +35,7 @@
 
 .header {
   border-radius: 10px 10px 0 0;
-  height: 30px;
+  height: 15px;
   display: flex;
   align-items: center;
 }
@@ -47,8 +49,9 @@
 }
 
 .professor,
-.author,
-.subject {
+.autor,
+.assunto,
+.curso {
   color: #000000;
   font-family: "Inter-Regular", Helvetica;
   font-size: 15px;
