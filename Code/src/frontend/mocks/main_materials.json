@@ -1,1 +1,134 @@
-[]
+[
+    {
+        "id": "1",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "2",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "3",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "4",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "5",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "6",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "7",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "8",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "9",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "10",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "11",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    },
+    {
+        "id": "12",
+        "titulo": "Resumos sobre React",
+        "professor": "Vinicius",
+        "autor": "gmdn@cin.ufpe.br",
+        "assunto": "React",
+        "codigoDisciplina": "IF975",
+        "semestre": "2022.2",
+        "periodo": "4º",
+        "curso": "Sistemas de Informação"
+    }
+]
