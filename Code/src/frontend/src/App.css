@@ -1,6 +1,8 @@
-header{
+/* HEADER */
+header {
   margin-bottom: 80px;
 }
+
 nav {
   background-color: #242424;
   display: flex;
@@ -58,4 +60,26 @@ nav {
   height: 23px;
   margin-right: 5px;
   filter: brightness(0) invert(1);
+}
+
+/* FOOTER  */
+footer {
+  color: #e8f1f2;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  background-color: #242424;
+
+}
+
+.a-footer {
+  color: #e8f1f2;
+}
+
+.a-footer:hover {
+  font-weight: bold;
+  font-style: italic;
+  color: #1b98e0;
 }

@@ -26,7 +26,7 @@ function App() {
                 alt="Icone de lupa"
                 className="nav-img2"
               />
-              </a>
+            </a>
             <div className='nav-div2-div'>
               <a className='nav-div-a' href="#">
                 Adicionar material
@@ -87,13 +87,20 @@ function App() {
         />
         <Card
           title="Mais um Card"
-          // Adicione as propriedades do segundo card do segundo conjunto aqui
+        // Adicione as propriedades do segundo card do segundo conjunto aqui
         />
         <Card
           title="E mais um"
-          // Adicione as propriedades do terceiro card do segundo conjunto aqui
+        // Adicione as propriedades do terceiro card do segundo conjunto aqui
         />
       </div>
+
+      <footer>
+        <h4>
+          2023 - <a class="a-footer" href="https://github.com/geovannaadomingos/ProjetoEngenhariaDeSoftware"
+            target="_blank">Repositório com mais informações</a>
+        </h4>
+      </footer>
     </>
   );
 }
