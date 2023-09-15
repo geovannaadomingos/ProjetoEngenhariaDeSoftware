@@ -1,9 +1,9 @@
 import './Home.css';
-import logo from './assets/colabora.png';
-import lupa from './assets/lupa.png';
-import mais from './assets/mais.svg';
-import main_materials from '../mocks/main_materials.json';
-import Card from './components/Card';
+import logo from '../assets/colabora.png';
+import lupa from '../assets/lupa.png';
+import mais from '../assets/mais.svg';
+import main_materials from "../mocks/main_materials.json"
+import Card from '../components/Card';
 
 function Home() {
     return (
