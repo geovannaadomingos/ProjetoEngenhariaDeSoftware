@@ -25,13 +25,7 @@ function Login({setIsLogged}) {
 
         google.accounts.id.renderButton(
             document.getElementById('signInDiv'),
-            {
-                theme: 'filled_blue',
-                size: 'large',
-                text: 'login',
-                shape: 'rectangular',
-                width: 'long',
-            }
+            {theme: 'filled_black', shape: 'pill', size: 'large', text: 'continue_with', width: '300'}
         )
         google.accounts.id.prompt();
     }, []);
