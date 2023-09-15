@@ -1,5 +1,28 @@
-.div-logo{
-    margin:0;
-    padding: 0;
-    background-color: aqua;
+.div {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-logo {
+    padding: 20px;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.div-logo-h1 {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.div-logo-img {
+    height: 250px;
+    width: 250px;
 }

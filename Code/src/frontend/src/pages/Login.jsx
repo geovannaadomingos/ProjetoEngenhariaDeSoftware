@@ -1,6 +1,7 @@
 // import React, { useEffect } from 'react';
 // import jwt_decode from 'jwt-decode';
 import './Login.css';
+import logo from '../assets/colabora.png';
 
 function Login(props) {
     // const [user, setUser] = React.useState({});
@@ -27,11 +28,19 @@ function Login(props) {
     // }, []);
 
     return (
-        <>
+        <div className='div'>
             <div className='div-logo'>
-                <h1>ColaboraCIn</h1>
+                <h1 className='div-logo-h1'>ColaboraCIn</h1>
+                <img
+                    src={logo}
+                    alt="Logo"
+                    className='div-logo-img'
+                />
             </div>
-        </>
+            <div className='div-button'>
+                <div id='signInDiv'></div>
+            </div>
+        </div>
         // <div className='Login'>
         //     <div id='signInDiv'></div>
         //     {user &&

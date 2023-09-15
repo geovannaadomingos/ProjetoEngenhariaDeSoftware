@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 
-body {
+body,
+html {
   font-family: sf pro text, -apple-system, BlinkMacSystemFont, segoe ui, roboto, helvetica neue, arial, sans-serif;
   font-weight: 400;
+  height: 100%;
 }
