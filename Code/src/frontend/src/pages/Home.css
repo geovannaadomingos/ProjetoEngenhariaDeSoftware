@@ -8,6 +8,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
 .nav-div1 {
@@ -76,6 +77,7 @@ main {
 
 /* FOOTER  */
 footer {
+    padding: 20px;
     color: #e8f1f2;
     text-align: center;
     width: 100%;
