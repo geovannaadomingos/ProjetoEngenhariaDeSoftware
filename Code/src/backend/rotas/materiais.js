@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const Material = require('../models/Material');
 
+// Separando os códigos
+const MaterialController = require('../controllers/materialController');
+
 
 // GET all Materials that matches the filters
 router.get('/', async (req, res) => {
@@ -35,6 +38,11 @@ router.get('/:id', async (req, res) => {
 
 
 // POST a new Material
+/*router
+    .route('/')
+    .post((req, res) => MaterialController.create(req, res));*/
+
+
 router.post('/', async (req, res) => {
     const material = new Material({
         title: req.body.title,
@@ -50,6 +58,7 @@ router.post('/', async (req, res) => {
     }
     catch (e) {res.status(400).json({ message: e.message })};
 });
+
 
 
 // DELETE a Material
