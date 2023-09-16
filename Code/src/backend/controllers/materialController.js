@@ -1,4 +1,3 @@
-const MaterialModel = require("../models/Material");
 const Material = require('../models/Material');
 
 const MaterialController = {
@@ -10,9 +9,19 @@ const MaterialController = {
                 code: req.body.code,
                 teacher: req.body.teacher,
                 semester: req.body.semester,
-                author: req.body.author});
+                author: req.body.author,
+                fileUrl: null
+            });
 
-            const newMaterial = await material.save();
+            let newMaterial = await material.save();
+
+            // Adicionar aqui a função para fazer o upload do arquivo no outro banco de dados
+            // Usar o newMaterial._id para criar o nome e path do arquivo
+
+            // Atualizar o newMaterial.fileUrl com o caminho onde o arquivo foi salvo
+            newMaterial.fileUrl = "http://localhost:3000/files/" + newMaterial._id;
+            newMaterial = await newMaterial.save();
+
             res.status(201).json(newMaterial);
         }
         catch (e) {res.status(400).json({ message: e.message })};
@@ -37,7 +46,8 @@ const MaterialController = {
 
     getAll: async (req, res) => {
         try {
-            let materials = await Material.findById(req.params.id);
+            let materials = await Material.find();
+
             materials = materials.filter(material => {
                 let found = true;
                 if (req.query.code && material.code !== req.query.code) found = false
@@ -52,6 +62,10 @@ const MaterialController = {
         }
         catch (e) {res.status(500).json({ message: e.message })};
     },
+
+    // Função para pegar os arquivos de um material
+    // Usar o req.params.id para formar o path onde o arquivo foi salvo
+    getFiles: async (req, res) => {}
 };
 
 module.exports = MaterialController;

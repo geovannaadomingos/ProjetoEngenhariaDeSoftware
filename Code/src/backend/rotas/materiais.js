@@ -13,6 +13,11 @@ router
     .route('/:id')
     .get((req, res) => MaterialController.getOne(req, res));
 
+// GET the files of one specific Material
+router
+    .route('/:id/files')
+    .get((req, res) => MaterialController.getFiles(req, res));
+
 // POST a new Material
 router
     .route('/')

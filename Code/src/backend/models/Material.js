@@ -24,6 +24,10 @@ const MaterialSchema = new mongoose.Schema({
     author: {
         type: String,
         required: true
+    },
+    fileUrl: {
+        type: String,
+        required: false
     }
 }, { timestamps: true });
 
