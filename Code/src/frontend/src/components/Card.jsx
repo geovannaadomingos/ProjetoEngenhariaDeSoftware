@@ -14,20 +14,18 @@ function Card(props) {
 
   return (
     <div className="card">
-      <div className="header">
-        <div className="rectangle" />
-        <div className="title">{titulo}</div>
-      </div>
+      <div className="rectangle" />
       <div className="details">
-        <div className="professor">Professor(a): {professor}</div>
-        <div className="autor">Autor(a): {autor}</div>
-        <div className="assunto">Assunto: {assunto}</div>
-        <div className="curso">Curso: {curso}</div>
+        <h4 className="details-h4">{titulo}</h4>
+        <p className="details-p">Professor(a): {professor}</p>
+        <p className="details-p">Autor(a): {autor}</p>
+        <p className="details-p">Assunto: {assunto}</p>
+        <p className="details-p">Curso: {curso}</p>
       </div>
       <div className="footer">
-        <div className="semester">{semestre}</div>
-        <div className="credits">{periodo} período</div>
-        <div className="course-code">{codigoDisciplina}</div>
+        <div className="footer-div">{semestre}</div>
+        <div className="footer-div">{periodo} período</div>
+        <div className="footer-div">{codigoDisciplina}</div>
       </div>
     </div>
   );

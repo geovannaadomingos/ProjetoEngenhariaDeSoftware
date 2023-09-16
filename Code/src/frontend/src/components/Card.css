@@ -2,63 +2,38 @@
   background-color: #D9D9D9;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 318px;
-  height: 182px;
+  justify-content: center;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
   border: 2px solid #828282;
   margin: 20px;
-}
-
-.card .title {
-  color: #000000;
+  padding: 20px;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 20px;
-  left: 26px;
-  top: 26px;
-  letter-spacing: 0;
-  position: absolute;
-  margin: 0 10px;
+  color: #242424;
 }
 
 .card .rectangle {
   background-color: #828282;
-  height: 182px;
+  height: 100%;
+  width: 20px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 20px;
 }
-
-.header {
-  border-radius: 10px 10px 0 0;
-  height: 15px;
-  display: flex;
-  align-items: center;
-}
-
 
 .details {
-  position: relative;
-  width: 310px;
-  height: 40px;
-  left: 39px;
+  padding-left: 20px;
 }
 
-.professor,
-.autor,
-.assunto,
-.curso {
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 15px;
-  font-weight: 400;
-  margin-bottom: 5px;
+.details-p,
+.details-h4 {
+  margin: 5px;
 }
 
+.details-h4 {
+  margin-bottom: 10px;
+}
 
 .footer {
   display: flex;
@@ -66,14 +41,9 @@
   padding: 10px;
 }
 
-.semester,
-.credits,
-.course-code {
+.footer-div {
   background-color: #828282;
   border-radius: 5px;
-  color: #000000;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 16px;
   margin: 0 5px;
   padding: 5px;
 }
