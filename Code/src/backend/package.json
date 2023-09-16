@@ -4,16 +4,21 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "dev": "nodemon src_upload/index.js",
+    "start": "node src_upload/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.5.0"
+    "mongoose": "^7.5.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
     "jest": "^29.6.4",
+    "nodemon": "^3.0.1",
     "supertest": "^6.3.3"
   }
 }
