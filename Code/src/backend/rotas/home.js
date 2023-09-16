@@ -3,7 +3,7 @@ const router = express.Router();
 const Material = require('../models/Material');
 
 // GET homepage with some materials
-router.get('/', async (req, res) => {
+router.get('/', async (_, res) => {
     try {
         const materials = await Material.find().limit(18);
         res.json(materials);
