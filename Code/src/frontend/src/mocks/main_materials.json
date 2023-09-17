@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "_id": "1",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -8,10 +8,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "2",
+        "_id": "2",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -19,10 +20,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "3",
+        "_id": "3",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -30,10 +32,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "4",
+        "_id": "4",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -41,10 +44,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "5",
+        "_id": "5",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -52,10 +56,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "6",
+        "_id": "6",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -63,10 +68,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "7",
+        "_id": "7",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -74,10 +80,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "8",
+        "_id": "8",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -85,10 +92,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "9",
+        "_id": "9",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -96,10 +104,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "10",
+        "_id": "10",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -107,10 +116,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "11",
+        "_id": "11",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -118,10 +128,11 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     },
     {
-        "id": "12",
+        "_id": "12",
         "titulo": "Resumos sobre React",
         "professor": "Vinicius",
         "autor": "gmdn@cin.ufpe.br",
@@ -129,6 +140,7 @@
         "codigoDisciplina": "IF975",
         "semestre": "2022.2",
         "periodo": "4º",
-        "curso": "Sistemas de Informação"
+        "curso": "Sistemas de Informação",
+        "url": "https://portal.cin.ufpe.br/wp-content/uploads/2022/06/FotoCIn.png"
     }
 ]

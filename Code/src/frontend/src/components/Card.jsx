@@ -1,5 +1,5 @@
 import "./Card.css";
-import download from "../assets/download.png";
+import eye from "../assets/eye.png";
 
 function Card(props) {
   const {
@@ -10,7 +10,8 @@ function Card(props) {
     professor,
     autor,
     assunto,
-    curso
+    curso,
+    url
   } = props;
 
   return (
@@ -29,11 +30,11 @@ function Card(props) {
         <div className="main-div">{codigoDisciplina}</div>
       </div>
       <div className='footer'>
-        <a className='footer-a' href="#">
-          Fazer download
+        <a className='footer-a' href={url} target="_blank" >
+          Visualizar material
           <img
-            src={download}
-            alt="Icone de download"
+            src={eye}
+            alt="Icone de olho"
             className='footer-img'
           />
         </a>

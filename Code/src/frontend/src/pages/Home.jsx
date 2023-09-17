@@ -52,6 +52,7 @@ function Home() {
                         autor={material.autor}
                         periodo={material.periodo}
                         curso={material.curso}
+                        url={material.url}
                     />
                 ))}
             </main>
