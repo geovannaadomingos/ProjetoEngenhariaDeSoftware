@@ -10,18 +10,11 @@ const MaterialController = {
                 teacher: req.body.teacher,
                 semester: req.body.semester,
                 author: req.body.author,
-                fileUrl: null
+                fileUrl: req.file ? req.file.fileUrl : ""
+                // Talvez criar uma exceção para o caso de não ter arquivo não conseguir postar o material
             });
 
-            let newMaterial = await material.save();
-
-            // Adicionar aqui a função para fazer o upload do arquivo no outro banco de dados
-            // Usar o newMaterial._id para criar o nome e path do arquivo
-
-            // Atualizar o newMaterial.fileUrl com o caminho onde o arquivo foi salvo
-            newMaterial.fileUrl = "http://localhost:3000/files/" + newMaterial._id;
-            newMaterial = await newMaterial.save();
-
+            const newMaterial = await material.save();
             res.status(201).json(newMaterial);
         }
         catch (e) {res.status(400).json({ message: e.message })};
@@ -61,11 +54,7 @@ const MaterialController = {
             else res.status(200).json(materials);
         }
         catch (e) {res.status(500).json({ message: e.message })};
-    },
-
-    // Função para pegar os arquivos de um material
-    // Usar o req.params.id para formar o path onde o arquivo foi salvo
-    getFiles: async (req, res) => {}
+    }
 };
 
 module.exports = MaterialController;
