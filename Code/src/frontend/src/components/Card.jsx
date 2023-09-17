@@ -1,4 +1,5 @@
 import "./Card.css";
+import download from "../assets/download.png";
 
 function Card(props) {
   const {
@@ -14,20 +15,28 @@ function Card(props) {
 
   return (
     <div className="card">
+      <div className="rectangle" />
       <div className="header">
-        <div className="rectangle" />
-        <div className="title">{titulo}</div>
+        <h4 className="header-h4">{titulo}</h4>
+        <p className="header-p">Professor(a): {professor}</p>
+        <p className="header-p">Autor(a): {autor}</p>
+        <p className="header-p">Assunto: {assunto}</p>
+        <p className="header-p">Curso: {curso}</p>
       </div>
-      <div className="details">
-        <div className="professor">Professor(a): {professor}</div>
-        <div className="autor">Autor(a): {autor}</div>
-        <div className="assunto">Assunto: {assunto}</div>
-        <div className="curso">Curso: {curso}</div>
+      <div className="main">
+        <div className="main-div">{semestre}</div>
+        <div className="main-div">{periodo} período</div>
+        <div className="main-div">{codigoDisciplina}</div>
       </div>
-      <div className="footer">
-        <div className="semester">{semestre}</div>
-        <div className="credits">{periodo} período</div>
-        <div className="course-code">{codigoDisciplina}</div>
+      <div className='footer'>
+        <a className='footer-a' href="#">
+          Fazer download
+          <img
+            src={download}
+            alt="Icone de download"
+            className='footer-img'
+          />
+        </a>
       </div>
     </div>
   );

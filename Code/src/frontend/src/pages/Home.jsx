@@ -43,7 +43,7 @@ function Home() {
             <main>
                 {main_materials.map((material) => (
                     <Card
-                        key={material.id}
+                        key={material._id}
                         titulo={material.titulo}
                         codigoDisciplina={material.codigoDisciplina}
                         assunto={material.assunto}

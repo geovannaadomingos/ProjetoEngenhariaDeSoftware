@@ -1,13 +1,13 @@
 /* HEADER */
-header {
-    margin-bottom: 80px;
-}
-
 nav {
     background-color: #242424;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-div1 {
@@ -72,6 +72,8 @@ main {
     justify-content: space-around;
     margin-left: 130px;
     margin-right: 130px;
+    margin-top: 170px;
+    margin-bottom: 100px;
 }
 
 /* FOOTER  */
