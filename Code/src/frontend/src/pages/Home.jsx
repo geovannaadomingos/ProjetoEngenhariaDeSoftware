@@ -4,8 +4,19 @@ import lupa from '../assets/lupa.png';
 import mais from '../assets/mais.svg';
 import main_materials from "../mocks/main_materials.json"
 import Card from '../components/Card';
+import { useState } from 'react';
+import AddMaterialModal from '../components/AddMaterialModal';
 
 function Home() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
     return (
         <>
             <header>
@@ -27,7 +38,7 @@ function Home() {
                             />
                         </a>
                         <div className='nav-div2-div'>
-                            <a className='nav-div-a' href="#">
+                            <a className='nav-div-a' onClick={openModal}>
                                 Adicionar material
                             </a>
                             <img
@@ -41,20 +52,24 @@ function Home() {
             </header>
 
             <main>
-                {main_materials.map((material) => (
-                    <Card
-                        key={material._id}
-                        titulo={material.titulo}
-                        codigoDisciplina={material.codigoDisciplina}
-                        assunto={material.assunto}
-                        semestre={material.semestre}
-                        professor={material.professor}
-                        autor={material.autor}
-                        periodo={material.periodo}
-                        curso={material.curso}
-                        url={material.url}
-                    />
-                ))}
+
+                {isModalOpen ?
+                    <AddMaterialModal onClose={closeModal} />
+                    :
+                    main_materials.map((material) => (
+                        <Card
+                            key={material._id}
+                            titulo={material.titulo}
+                            codigoDisciplina={material.codigoDisciplina}
+                            assunto={material.assunto}
+                            semestre={material.semestre}
+                            professor={material.professor}
+                            autor={material.autor}
+                            periodo={material.periodo}
+                            curso={material.curso}
+                            url={material.url}
+                        />
+                    ))}
             </main>
 
             <footer>
