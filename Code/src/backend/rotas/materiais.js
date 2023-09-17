@@ -2,6 +2,13 @@ const express = require('express');
 const router = express.Router();
 const MaterialController = require('../controllers/materialController');
 
+const multer = require('multer');
+const Multer = multer({
+    storage: multer.memoryStorage(),
+    limits: 1024 * 1024,
+});
+const uploadFile = require('../db/firebase');
+
 
 // GET all Materials that matches the filters
 router
@@ -13,15 +20,8 @@ router
     .route('/:id')
     .get((req, res) => MaterialController.getOne(req, res));
 
-// GET the files of one specific Material
-router
-    .route('/:id/files')
-    .get((req, res) => MaterialController.getFiles(req, res));
-
 // POST a new Material
-router
-    .route('/')
-    .post((req, res) => MaterialController.create(req, res));
+router.post('/', Multer.single('file'), uploadFile, (req, res) => MaterialController.create(req, res));
 
 // DELETE a Material
 router
