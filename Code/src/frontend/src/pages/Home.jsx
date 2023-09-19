@@ -17,6 +17,12 @@ function Home() {
     const closeModal = () => {
         setIsModalOpen(false);
     };
+
+    const addMaterial = () => {
+        // mudar função depois
+        console.log("Adicionou material")
+    };
+
     return (
         <>
             <header>
@@ -54,7 +60,7 @@ function Home() {
             <main>
 
                 {isModalOpen ?
-                    <AddMaterialModal onClose={closeModal} />
+                    <AddMaterialModal onClose={closeModal} onAddMaterial={addMaterial} />
                     :
                     main_materials.map((material) => (
                         <Card
