@@ -24,7 +24,7 @@ function Home() {
     };
 
     const addMaterial = (materialInfo) => {
-        console.log(materialInfo);
+        // console.log(materialInfo); 
         MaterialService.addMaterial(materialInfo)
             .then((response) => {
                 setMainMaterials(prevMaterials => [...prevMaterials, response]);
@@ -99,6 +99,7 @@ function Home() {
                             curso={material.curso}
                             url={material.url}
                             userEmail={userEmail}
+                            id={material._id}
                         />
                     ))}
             </main>

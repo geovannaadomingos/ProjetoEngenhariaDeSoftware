@@ -5,7 +5,7 @@ import MaterialService from '../services/MaterialService';
 
 function Card(props) {
   const {
-    key,
+    id,
     titulo,
     codigoDisciplina,
     periodo,
@@ -18,7 +18,7 @@ function Card(props) {
   } = props;
 
   const handleDelete = () => {
-    MaterialService.deleteMaterial(key)
+    MaterialService.deleteMaterial(id)
       .then(response => {
         console.log('Material excluído:', response);
       })
