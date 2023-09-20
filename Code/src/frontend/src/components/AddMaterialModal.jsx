@@ -48,11 +48,12 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
                             value={materialInfo.titulo}
                             onChange={handleInputChange}
                             className="input-field"
+                            required
                         />
                     </label>
                     <label>
                         Anexar arquivo:
-                        <input type="file" onChange={handleFileChange} accept=".pdf, .doc, .docx" className="input-field" />
+                        <input type="file" onChange={handleFileChange} accept=".pdf, .doc, .docx, .png, .svg, .jpeg, .jpg" className="input-field" required />
                     </label>
                     <label>
                         Autor:
@@ -62,6 +63,7 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
                             value={materialInfo.autor}
                             onChange={handleInputChange}
                             className="input-field"
+                            required
                         />
                     </label>
                     <label>
@@ -72,6 +74,7 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
                             value={materialInfo.assunto}
                             onChange={handleInputChange}
                             className="input-field"
+                            required
                         />
                     </label>
                     <label>
@@ -82,6 +85,7 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
                             value={materialInfo.periodo}
                             onChange={handleInputChange}
                             className="input-field"
+                            required
                         />
                     </label>
                     <label>
@@ -92,6 +96,7 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
                             value={materialInfo.professor}
                             onChange={handleInputChange}
                             className="input-field"
+                            required
                         />
                     </label>
                     <label>
@@ -102,6 +107,7 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
                             value={materialInfo.codigoDisciplina}
                             onChange={handleInputChange}
                             className="input-field"
+                            required
                         />
                     </label>
                     <label>
@@ -112,6 +118,7 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
                             value={materialInfo.curso}
                             onChange={handleInputChange}
                             className="input-field"
+                            required
                         />
                     </label>
                     <button type="submit" className="btn-submit">Adicionar</button>
