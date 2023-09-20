@@ -1,31 +1,35 @@
 const mongoose = require('mongoose');
 
 const MaterialSchema = new mongoose.Schema({
-    title: {
+    titulo: {
         type: String,
         required: true
     },
-    subject: {
+    assunto: {
         type: String,
         required: true
     },
-    code: {
+    codigoDisciplina: {
         type: String,
         required: true
     },
-    teacher: {
+    professor: {
         type: String,
         required: true
     },
-    semester: {
-        type: Number,
-        required: true
-    },
-    author: {
+    periodo: {
         type: String,
         required: true
     },
-    fileUrl: {
+    autor: {
+        type: String,
+        required: true
+    },
+    curso: {
+        type: String,
+        required: true
+    },
+    url: {
         type: String,
         required: false
     }
