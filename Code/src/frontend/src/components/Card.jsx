@@ -1,9 +1,11 @@
 import "./Card.css";
 import eye from "../assets/eye.png";
 import lixo from "../assets/lixo.png";
+import MaterialService from '../services/MaterialService';
 
 function Card(props) {
   const {
+    key,
     titulo,
     codigoDisciplina,
     periodo,
@@ -11,19 +13,27 @@ function Card(props) {
     autor,
     assunto,
     curso,
-    url
+    url,
+    userEmail
   } = props;
 
   const handleDelete = () => {
-    console.log('excluiu');
-  }
+    MaterialService.deleteMaterial(key)
+      .then(response => {
+        console.log('Material excluído:', response);
+      })
+      .catch(error => {
+        console.error('Erro ao excluir material:', error);
+      });
+  };
 
   return (
     <div className="card">
-      <div className="delete-icon" onClick={handleDelete}>
-        <img src={lixo} alt="Ícone de lixeira" className="deletar" />
-
-      </div>
+      {userEmail == autor && (
+        <div className="delete-icon" onClick={handleDelete}>
+          <img src={lixo} alt="Ícone de lixeira" className="deletar" />
+        </div>
+      )}
       <div className="rectangle" />
       <div className="header">
         <h4 className="header-h4">{titulo}</h4>
@@ -37,14 +47,10 @@ function Card(props) {
         <div className="main-div">{codigoDisciplina}</div>
       </div>
 
-      <div className='footer'>
-        <a className='footer-a' href={url} target="_blank" rel="noreferrer" >
+      <div className="footer">
+        <a className="footer-a" href={url} target="_blank" rel="noreferrer">
           Visualizar material
-          <img
-            src={eye}
-            alt="Icone de olho"
-            className='footer-img'
-          />
+          <img src={eye} alt="Icone de olho" className="footer-img" />
         </a>
       </div>
     </div>

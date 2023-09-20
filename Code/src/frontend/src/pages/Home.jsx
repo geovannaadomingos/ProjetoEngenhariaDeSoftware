@@ -97,6 +97,7 @@ function Home() {
                             periodo={material.periodo}
                             curso={material.curso}
                             url={material.url}
+                            userEmail={userEmail}
                         />
                     ))}
             </main>
