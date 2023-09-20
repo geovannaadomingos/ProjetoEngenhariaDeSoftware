@@ -15,7 +15,7 @@ function Card(props) {
   } = props;
 
   const handleDelete = () => {
-    console.log('sla porra');
+    console.log('excluiu');
   }
 
   return (

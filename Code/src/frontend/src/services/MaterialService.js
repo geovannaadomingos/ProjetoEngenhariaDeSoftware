@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const API_URL = 'http://url'; // depois substituir
+const API_URL = 'https://colab-00h2.onrender.com/api';
 
 const MaterialService = {
-    getAllMaterials: () => {
+    getMaterialsHome: () => {
         const url = `${API_URL}/`;
         return axios.get(url)
             .then(response => response.data)
@@ -13,7 +13,7 @@ const MaterialService = {
     },
 
     getMaterialById: (id) => {
-        const url = `${API_URL}/${id}`;
+        const url = `${API_URL}/materiais/${id}`;
         return axios.get(url)
             .then(response => response.data)
             .catch(error => {
@@ -22,7 +22,7 @@ const MaterialService = {
     },
 
     addMaterial: (materialInfo) => {
-        const url = `${API_URL}/`;
+        const url = `${API_URL}/materiais`;
         return axios.post(url, materialInfo)
             .then(response => response.data)
             .catch(error => {
@@ -31,7 +31,7 @@ const MaterialService = {
     },
 
     deleteMaterial: (id) => {
-        const url = `${API_URL}/${id}`;
+        const url = `${API_URL}/materiais/${id}`;
         return axios.delete(url)
             .then(response => response.data)
             .catch(error => {

@@ -3,16 +3,16 @@ import { useLocation } from 'react-router-dom';
 import logo from '../assets/colabora.png';
 import lupa from '../assets/lupa.png';
 import mais from '../assets/mais.svg';
-import main_materials from "../mocks/main_materials.json"
+// import main_materials from "../mocks/main_materials.json"
 import Card from '../components/Card';
 import AddMaterialModal from '../components/AddMaterialModal';
 import { useState, useEffect } from 'react';
-// import MaterialService from '../services/MaterialService';
+import MaterialService from '../services/MaterialService';
 
 
 function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    // const [mainMaterials, setMainMaterials] = useState([]);
+    const [mainMaterials, setMainMaterials] = useState([]);
     const location = useLocation();
     const userEmail = location.state ? location.state.userEmail : null;
     const openModal = () => {
@@ -24,29 +24,27 @@ function Home() {
     };
 
     const addMaterial = (materialInfo) => {
-        // apagar console depois
-        console.log('Material Info:', materialInfo);
-        // MaterialService.adicionarMaterial(materialInfo)
-        //     .then((response) => {
-        //         setMainMaterials(prevMaterials => [...prevMaterials, response]);
-        //     })
-        //     .catch((error) => {
-        //         console.error('Erro ao adicionar material:', error);
-        //     });
+        MaterialService.adicionarMaterial(materialInfo)
+            .then((response) => {
+                setMainMaterials(prevMaterials => [...prevMaterials, response]);
+            })
+            .catch((error) => {
+                console.error('Erro ao adicionar material:', error);
+            });
     };
 
-    // useEffect(() => {
-    //     const carregarMateriais = async () => {
-    //         try {
-    //             const materiais = await MaterialService.getAllMaterials();
-    //             setMainMaterials(materiais);
-    //         } catch (error) {
-    //             console.error('Erro ao obter materiais:', error);
-    //         }
-    //     };
+    useEffect(() => {
+        const carregarMateriais = async () => {
+            try {
+                const materiais = await MaterialService.getMaterialsHome();
+                setMainMaterials(materiais);
+            } catch (error) {
+                console.error('Erro ao obter materiais:', error);
+            }
+        };
 
-    //     carregarMateriais();
-    // }, []);
+        carregarMateriais();
+    }, []);
 
     return (
         <>
@@ -87,9 +85,8 @@ function Home() {
                 {isModalOpen ?
                     <AddMaterialModal onClose={closeModal} onAddMaterial={addMaterial} email={userEmail} />
                     :
-                    // mainMaterials.map((material) => (
-                    // descomentar linha depois 
-                    main_materials.map((material) => (
+                    mainMaterials.map((material) => (
+                    // main_materials.map((material) => (
                         <Card
                             key={material._id}
                             titulo={material.titulo}
