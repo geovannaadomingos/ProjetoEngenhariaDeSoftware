@@ -37,6 +37,9 @@ function Card(props) {
           />
         </a>
       </div>
+      <button className='delete-button' onClick={console.log("deletou")}>
+        Deletar
+      </button>
     </div>
   );
 }
