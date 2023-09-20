@@ -4,11 +4,14 @@ import lupa from '../assets/lupa.png';
 import mais from '../assets/mais.svg';
 import main_materials from "../mocks/main_materials.json"
 import Card from '../components/Card';
-import { useState } from 'react';
 import AddMaterialModal from '../components/AddMaterialModal';
+import { useState, useEffect } from 'react';
+// import MaterialService from '../services/MaterialService';
+
 
 function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    // const [mainMaterials, setMainMaterials] = useState([]);
 
     const openModal = () => {
         setIsModalOpen(true);
@@ -18,10 +21,30 @@ function Home() {
         setIsModalOpen(false);
     };
 
-    const addMaterial = () => {
-        // mudar função depois
-        console.log("Adicionou material")
+    const addMaterial = (materialInfo) => {
+        // apagar console depois
+        console.log('Material Info:', materialInfo);
+        // MaterialService.adicionarMaterial(materialInfo)
+        //     .then((response) => {
+        //         setMainMaterials(prevMaterials => [...prevMaterials, response]);
+        //     })
+        //     .catch((error) => {
+        //         console.error('Erro ao adicionar material:', error);
+        //     });
     };
+
+    // useEffect(() => {
+    //     const carregarMateriais = async () => {
+    //         try {
+    //             const materiais = await MaterialService.getAllMaterials();
+    //             setMainMaterials(materiais);
+    //         } catch (error) {
+    //             console.error('Erro ao obter materiais:', error);
+    //         }
+    //     };
+
+    //     carregarMateriais();
+    // }, []);
 
     return (
         <>
@@ -62,6 +85,8 @@ function Home() {
                 {isModalOpen ?
                     <AddMaterialModal onClose={closeModal} onAddMaterial={addMaterial} />
                     :
+                    // mainMaterials.map((material) => (
+                    // descomentar linha depois 
                     main_materials.map((material) => (
                         <Card
                             key={material._id}

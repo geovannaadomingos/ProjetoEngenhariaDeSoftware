@@ -31,6 +31,7 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log('Material Info:', materialInfo); // Console log do materialInfo - remover depois
         onAddMaterial(materialInfo);
         onClose();
     };
