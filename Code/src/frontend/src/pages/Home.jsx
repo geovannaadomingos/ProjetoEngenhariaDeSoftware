@@ -1,4 +1,5 @@
 import './Home.css';
+import { useLocation } from 'react-router-dom';
 import logo from '../assets/colabora.png';
 import lupa from '../assets/lupa.png';
 import mais from '../assets/mais.svg';
@@ -12,7 +13,8 @@ import { useState, useEffect } from 'react';
 function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     // const [mainMaterials, setMainMaterials] = useState([]);
-
+    const location = useLocation();
+    const userEmail = location.state ? location.state.userEmail : null;
     const openModal = () => {
         setIsModalOpen(true);
     };
@@ -83,7 +85,7 @@ function Home() {
             <main>
 
                 {isModalOpen ?
-                    <AddMaterialModal onClose={closeModal} onAddMaterial={addMaterial} />
+                    <AddMaterialModal onClose={closeModal} onAddMaterial={addMaterial} email={userEmail} />
                     :
                     // mainMaterials.map((material) => (
                     // descomentar linha depois 

@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './AddMaterialModal.css';
 
-function AddMaterialModal({ onClose, onAddMaterial }) {
+function AddMaterialModal({ onClose, onAddMaterial, email }) {
     const [materialInfo, setMaterialInfo] = useState({
         titulo: '',
         arquivo: null,
-        autor: '',
+        autor: email ? email : '',
         assunto: '',
         periodo: '',
         professor: '',
@@ -58,14 +58,18 @@ function AddMaterialModal({ onClose, onAddMaterial }) {
                     </label>
                     <label>
                         Autor:
-                        <input
-                            type="text"
-                            name="autor"
-                            value={materialInfo.autor}
-                            onChange={handleInputChange}
-                            className="input-field"
-                            required
-                        />
+                        {materialInfo.autor ? (
+                            ` ${materialInfo.autor}`
+                        ) : (
+                            <input
+                                type="text"
+                                name="autor"
+                                value={materialInfo.autor}
+                                onChange={handleInputChange}
+                                className="input-field"
+                                required
+                            />
+                        )}
                     </label>
                     <label>
                         Assunto:
