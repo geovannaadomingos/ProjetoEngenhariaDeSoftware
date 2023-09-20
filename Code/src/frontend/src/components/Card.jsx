@@ -28,7 +28,7 @@ function Card(props) {
         <div className="main-div">{codigoDisciplina}</div>
       </div>
       <div className='footer'>
-        <a className='footer-a' href={url} target="_blank" >
+        <a className='footer-a' href={url} target="_blank" rel="noreferrer" >
           Visualizar material
           <img
             src={eye}
