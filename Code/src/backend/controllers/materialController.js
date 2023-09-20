@@ -4,14 +4,14 @@ const MaterialController = {
     create: async (req, res) => {
         try {
             const material = new Material({
-                title: req.body.title,
-                subject: req.body.subject,
-                code: req.body.code,
-                teacher: req.body.teacher,
-                semester: req.body.semester,
-                author: req.body.author,
-                fileUrl: req.file ? req.file.fileUrl : ""
-                // Talvez criar uma exceção para o caso de não ter arquivo não conseguir postar o material
+                titulo: req.body.titulo,
+                assunto: req.body.assunto,
+                codigoDisciplina: req.body.codigoDisciplina,
+                professor: req.body.professor,
+                periodo: req.body.periodo,
+                autor: req.body.autor,
+                curso: req.body.curso,
+                url: req.file ? req.file.fileUrl : ""
             });
 
             const newMaterial = await material.save();
@@ -43,10 +43,11 @@ const MaterialController = {
 
             materials = materials.filter(material => {
                 let found = true;
-                if (req.query.code && material.code !== req.query.code) found = false
-                else if (req.query.teacher && material.teacher !== req.query.teacher) found = false
-                else if (req.query.semester && material.semester !== req.query.semester) found = false
+                if (req.query.codigoDisciplina && material.codigoDisciplina !== req.query.codigoDisciplina) found = false
+                else if (req.query.professor && material.professor !== req.query.professor) found = false
+                else if (req.query.periodo && material.periodo !== req.query.periodo) found = false
                 else if (req.query.createdAt && material.createdAt < req.query.createdAt) found = false
+                else if (req.query.curso && material.curso !== req.query.curso) found = false
                 return found;
             });
     
