@@ -7,7 +7,7 @@ const Multer = multer({
     storage: multer.memoryStorage(),
     limits: 1024 * 1024,
 });
-const uploadFile = require('../../db/firebase');
+const uploadFile = require('../db/firebase');
 
 
 // GET all Materials that matches the filters
