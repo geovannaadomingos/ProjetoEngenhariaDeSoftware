@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import jwt_decode from 'jwt-decode';
 import './Login.css';
 import logo from '../assets/colabora.png';
 import { useNavigate } from 'react-router-dom';
 
-function Login({setIsLogged}) {
+function Login({ setIsLogged }) {
     const navigate = useNavigate();
     const [isLogged, setIsEmailVerified] = useState(false);
 
@@ -13,7 +13,7 @@ function Login({setIsLogged}) {
         if (userObject.email_verified) {
             setIsEmailVerified(true);
             setIsLogged(true);
-            navigate('/home');
+            navigate('/home', { state: { userEmail: userObject.email } })
         }
     }
 
@@ -25,7 +25,7 @@ function Login({setIsLogged}) {
 
         google.accounts.id.renderButton(
             document.getElementById('signInDiv'),
-            {theme: 'filled_black', shape: 'pill', size: 'large', text: 'continue_with', width: '300'}
+            { theme: 'filled_black', shape: 'pill', size: 'large', text: 'continue_with', width: '300' }
         )
         google.accounts.id.prompt();
     }, []);
