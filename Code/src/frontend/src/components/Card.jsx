@@ -1,5 +1,6 @@
 import "./Card.css";
 import eye from "../assets/eye.png";
+import lixo from "../assets/lixo.png";
 
 function Card(props) {
   const {
@@ -13,8 +14,16 @@ function Card(props) {
     url
   } = props;
 
+  const handleDelete = () => {
+    console.log('sla porra');
+  }
+
   return (
     <div className="card">
+      <div className="delete-icon" onClick={handleDelete}>
+        <img src={lixo} alt="Ícone de lixeira" className="deletar" />
+
+      </div>
       <div className="rectangle" />
       <div className="header">
         <h4 className="header-h4">{titulo}</h4>
@@ -27,6 +36,7 @@ function Card(props) {
         <div className="main-div">{periodo} período</div>
         <div className="main-div">{codigoDisciplina}</div>
       </div>
+
       <div className='footer'>
         <a className='footer-a' href={url} target="_blank" rel="noreferrer" >
           Visualizar material
