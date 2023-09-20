@@ -4,7 +4,7 @@ import './AddMaterialModal.css';
 function AddMaterialModal({ onClose, onAddMaterial, email }) {
     const [materialInfo, setMaterialInfo] = useState({
         titulo: '',
-        arquivo: null,
+        file: null,
         autor: email ? email : '',
         assunto: '',
         periodo: '',
@@ -25,7 +25,7 @@ function AddMaterialModal({ onClose, onAddMaterial, email }) {
         const file = event.target.files[0];
         setMaterialInfo((prevInfo) => ({
             ...prevInfo,
-            arquivo: file
+            file: file
         }));
     };
 

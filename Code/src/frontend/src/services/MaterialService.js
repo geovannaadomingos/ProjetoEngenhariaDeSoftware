@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://colab-00h2.onrender.com/api';
+const API_URL = 'https://colaboracin-7lj2.onrender.com/api';
 
 const MaterialService = {
     getMaterialsHome: () => {

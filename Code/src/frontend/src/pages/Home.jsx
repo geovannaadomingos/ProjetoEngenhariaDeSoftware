@@ -24,7 +24,8 @@ function Home() {
     };
 
     const addMaterial = (materialInfo) => {
-        MaterialService.adicionarMaterial(materialInfo)
+        console.log(materialInfo);
+        MaterialService.addMaterial(materialInfo)
             .then((response) => {
                 setMainMaterials(prevMaterials => [...prevMaterials, response]);
             })
