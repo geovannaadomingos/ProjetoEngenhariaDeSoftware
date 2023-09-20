@@ -68,7 +68,6 @@ function Home() {
                             titulo={material.titulo}
                             codigoDisciplina={material.codigoDisciplina}
                             assunto={material.assunto}
-                            semestre={material.semestre}
                             professor={material.professor}
                             autor={material.autor}
                             periodo={material.periodo}

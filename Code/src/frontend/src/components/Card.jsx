@@ -6,7 +6,6 @@ function Card(props) {
     titulo,
     codigoDisciplina,
     periodo,
-    semestre,
     professor,
     autor,
     assunto,
@@ -25,7 +24,6 @@ function Card(props) {
         <p className="header-p">Curso: {curso}</p>
       </div>
       <div className="main">
-        <div className="main-div">{semestre}</div>
         <div className="main-div">{periodo} período</div>
         <div className="main-div">{codigoDisciplina}</div>
       </div>
