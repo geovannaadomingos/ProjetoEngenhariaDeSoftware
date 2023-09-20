@@ -94,17 +94,3 @@
   margin-left: 10px;
   transition: height 0.3s ease;
 }
-
-.delete-button {
-  background-color: #DC7D49;
-  color: white;
-  padding: 8px 16px;
-  border: 1px solid #DC7D49;
-  cursor: pointer;
-  margin-left: 16px;
-  border-radius: 4px;
-}
-
-.delete-button:hover {
-  background-color: #ff6400;
-}
