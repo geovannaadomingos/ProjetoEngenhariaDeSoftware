@@ -31,8 +31,16 @@ function AddMaterialModal({ onClose, onAddMaterial, email }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Material Info:', materialInfo); // Console log do materialInfo - remover depois
-        onAddMaterial(materialInfo);
+        const formData = new FormData();
+        formData.append('file', materialInfo.file);
+        formData.append('titulo', materialInfo.titulo);
+        formData.append('autor', materialInfo.autor);
+        formData.append('assunto', materialInfo.assunto);
+        formData.append('periodo', materialInfo.periodo);
+        formData.append('professor', materialInfo.professor);
+        formData.append('codigoDisciplina', materialInfo.codigoDisciplina);
+        formData.append('curso', materialInfo.curso);
+        onAddMaterial(formData);
         onClose();
     };
 
