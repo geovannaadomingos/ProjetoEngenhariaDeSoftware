@@ -32,7 +32,7 @@ Essas são as principais tecnologias utilizadas no desenvolvimento do projeto:
 
 ## Acesso à aplicação
 
-Para visualizar a nossa aplicação, acesse o [link](https://colaboracin.vercel.app/). Caso queira acessar a nossa API, acesso o [link](https://colaboracin-7lj2.onrender.com/api).
+Para visualizar a nossa aplicação, acesse o [link](https://colaboracin.vercel.app/). Caso queira acessar a nossa API, acesse o [link](https://colaboracin-7lj2.onrender.com/api).
 
 ------
 
