@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import logo from '../assets/colabora.png';
 import lupa from '../assets/lupa.png';
 import mais from '../assets/mais.svg';
-// import main_materials from "../mocks/main_materials.json"
 import Card from '../components/Card';
 import AddMaterialModal from '../components/AddMaterialModal';
 import { useState, useEffect } from 'react';
@@ -31,6 +30,16 @@ function Home() {
             })
             .catch((error) => {
                 console.error('Erro ao adicionar material:', error);
+            });
+    };
+
+    const handleDeleteMaterial = () => {
+        MaterialService.getMaterialsHome()
+            .then((materiais) => {
+                setMainMaterials(materiais);
+            })
+            .catch((error) => {
+                console.error('Erro ao obter materiais após exclusão:', error);
             });
     };
 
@@ -87,7 +96,6 @@ function Home() {
                     <AddMaterialModal onClose={closeModal} onAddMaterial={addMaterial} email={userEmail} />
                     :
                     mainMaterials.map((material) => (
-                    // main_materials.map((material) => (
                         <Card
                             key={material._id}
                             titulo={material.titulo}
@@ -100,6 +108,7 @@ function Home() {
                             url={material.url}
                             userEmail={userEmail}
                             id={material._id}
+                            onDeleteMaterial={handleDeleteMaterial}
                         />
                     ))}
             </main>

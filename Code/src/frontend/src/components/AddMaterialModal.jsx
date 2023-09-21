@@ -40,7 +40,7 @@ function AddMaterialModal({ onClose, onAddMaterial, email }) {
         <div className="modal">
             <div className="modal-content">
                 <h2>Adicionar Material</h2>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} encType="multipart/form-data">
                     <label>
                         Título do Material:
                         <input
