@@ -1,14 +1,13 @@
+import React from 'react';
 import './Home.css';
 import { useLocation } from 'react-router-dom';
 import logo from '../assets/colabora.png';
 import lupa from '../assets/lupa.png';
 import mais from '../assets/mais.svg';
-// import main_materials from "../mocks/main_materials.json"
 import Card from '../components/Card';
 import AddMaterialModal from '../components/AddMaterialModal';
 import { useState, useEffect } from 'react';
 import MaterialService from '../services/MaterialService';
-
 
 function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,7 +23,6 @@ function Home() {
     };
 
     const addMaterial = (materialInfo) => {
-        // console.log(materialInfo); 
         MaterialService.addMaterial(materialInfo)
             .then((response) => {
                 setMainMaterials(prevMaterials => [...prevMaterials, response]);
@@ -32,6 +30,20 @@ function Home() {
             .catch((error) => {
                 console.error('Erro ao adicionar material:', error);
             });
+    };
+
+    const handleDeleteMaterial = () => {
+        MaterialService.getMaterialsHome()
+            .then((materiais) => {
+                setMainMaterials(materiais);
+            })
+            .catch((error) => {
+                console.error('Erro ao obter materiais após exclusão:', error);
+            });
+    };
+
+    const handleSearchClick = () => {
+        alert('A funcionalidade de pesquisa ainda não foi implementada :(');
     };
 
     useEffect(() => {
@@ -60,7 +72,7 @@ function Home() {
                         />
                     </div>
                     <div className='nav-div2'>
-                        <a href="#" className="search-icon">
+                        <a className="search-icon" onClick={handleSearchClick}>
                             <img
                                 src={lupa}
                                 alt="Icone de lupa"
@@ -82,12 +94,10 @@ function Home() {
             </header>
 
             <main>
-
                 {isModalOpen ?
                     <AddMaterialModal onClose={closeModal} onAddMaterial={addMaterial} email={userEmail} />
                     :
                     mainMaterials.map((material) => (
-                    // main_materials.map((material) => (
                         <Card
                             key={material._id}
                             titulo={material.titulo}
@@ -100,6 +110,7 @@ function Home() {
                             url={material.url}
                             userEmail={userEmail}
                             id={material._id}
+                            onDeleteMaterial={handleDeleteMaterial}
                         />
                     ))}
             </main>

@@ -30,6 +30,12 @@ Essas são as principais tecnologias utilizadas no desenvolvimento do projeto:
 
 ------
 
+## Acesso à aplicação
+
+Para visualizar a nossa aplicação, acesse o [link](https://colaboracin.vercel.app/). Caso queira acessar a nossa API, acesse o [link](https://colaboracin-7lj2.onrender.com/api).
+
+------
+
 ## Autores do projeto
 Esse é o time de alunos, da graduação em Sistemas de Informações, responsável pela idealização e desenvolvimento do projeto:
 

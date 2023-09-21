@@ -19,7 +19,7 @@ function Login({ setIsLogged }) {
 
     useEffect(() => {
         google.accounts.id.initialize({
-            client_id: '394323047185-va2rp8rso0bgor9s49o65rp4otul602r.apps.googleusercontent.com',
+            client_id: '813218912225-ol7uraoupe922rtm5qqke1kuhd97o1iv.apps.googleusercontent.com', //ID Gustavo
             callback: handleCredentialResponse,
         });
 

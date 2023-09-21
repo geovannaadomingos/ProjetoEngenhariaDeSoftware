@@ -14,13 +14,15 @@ function Card(props) {
     assunto,
     curso,
     url,
-    userEmail
+    userEmail,
+    onDeleteMaterial
   } = props;
 
   const handleDelete = () => {
     MaterialService.deleteMaterial(id)
       .then(response => {
         console.log('Material excluído:', response);
+        onDeleteMaterial();
       })
       .catch(error => {
         console.error('Erro ao excluir material:', error);
