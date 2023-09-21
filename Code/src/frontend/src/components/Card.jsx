@@ -45,7 +45,7 @@ function Card(props) {
         <p className="header-p">Curso: {curso}</p>
       </div>
       <div className="main">
-        <div className="main-div">{periodo} período</div>
+        <div className="main-div">Período: {periodo}</div>
         <div className="main-div">{codigoDisciplina}</div>
       </div>
 
